@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <table>
+
+    <tr class="row">
+        <th>Name</th>
+        <th>Bounces</th>
+        
+    </tr>
+    <tr class="row">
+        <td>Tendai</td>
+        <td>7</td>
+        
+    </tr>
+    <tr class="row">
+        <td>Kudzai</td>
+        <td>13</td>
+        
+    </tr>
+    <tr class="row">
+        <td>Taurai</td>
+        <td>3</td>
+        
+    </tr>
+    <tr class="row">
+        <td>Nyika</td>
+        <td>1000</td>
+        
+    </tr>
+</table>
+<table>
+    <tr class="row2">
+        <th>Name</th>
+        <th>Favourite Dish</th>
+        
+    </tr>
+    <tr class="row2">
+        <td>Tendai</td>
+        <td>Sadza Madora</td>
+        
+    </tr>
+    <tr class="row2">
+        <td>Kudzai</td>
+        <td>Sadza Chicken</td>
+        
+    </tr>
+    <tr class="row2">
+        <td>Taurai</td>
+        <td>Gango</td>
+        
+    </tr>
+    <tr class="row2">
+        <td>Nyika</td>
+        <td>Sadza Mufushwa</td>
+        
+    </tr>
+    
+  </table>  
+  <button onclick="myFunction()">Click me</button>
+</body>
+
+<script>
+    function myFunction() {
+        var allRows = document.getElementsByClassName("row");
+    for(var i =0; i < allRows.length; i++){
+        if(i % 2 ==0){
+            allRows[i].classList.add("zebraStripe");
+        }
+    }
+
+    var allRows = document.getElementsByClassName("row2");
+    for(var i =0; i < allRows.length; i++){
+        if(i % 2 ==0){
+            allRows[i].classList.add("zebraStripe");
+        }
+     }
+    }
+    
+</script>
+</html>

@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+}
+table, tr, th, td{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*tr:nth-child(odd){
+    background-color: black;
+    color: white;
+    
+}*/
+.zebraStripe{
+    background-color: black;
+    color:white;
+    border-color: black;
+}
+button{
+    padding: 20px;
+    margin-top: 2em;
+}
